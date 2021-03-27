@@ -12,6 +12,10 @@ const navListUl = document.getElementById("nav-list");
 const navLinks = Array.from(
   navListUl.getElementsByClassName("link")
 );
+const hamburger = navListUl.querySelector(".hamburger");
+
+const authModal = document.querySelector(".auth-modal");
+const closeAuthModal = authModal.querySelector(".auth-modal-close");
 
 const hero = document.getElementById("hero");
 
@@ -26,6 +30,15 @@ navListUl.addEventListener("click", ({ target }) => {
 
     target.classList.add("active-link");
   }
+});
+
+hamburger.addEventListener("click", () => {
+  authModal.classList.add("auth-modal-show");
+});
+
+closeAuthModal.addEventListener("click", () => {
+  hamburger.style.color = "black";
+  authModal.classList.remove("auth-modal-show");
 });
 
 // should debounce for performance

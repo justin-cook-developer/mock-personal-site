@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/e7800804b6.js" crossorigin="anonymous"></script> 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="authModal.css">
   <link rel="stylesheet" href="hero.css">
   <script src="script.js" defer></script>
   <title>BORED</title>
@@ -23,10 +25,20 @@
             <button>Log In</button>
             <button>Register</button>
           </li>
-          <li class="nav-item hamburger">ham</li>
+          <li class="nav-item hamburger"><i class="fas fa-bars"></i></li>
         </ul>
       </nav>
     </header>
+
+    <div class="auth-modal">
+      <span class="auth-modal-close">
+        X
+      </span>
+      <ul>
+        <li>Log In</li>
+        <li>Register</li>
+      </ul>
+    </div>
 
     <div id="hero">
       <div id="sticky">
