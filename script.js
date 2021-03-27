@@ -1,7 +1,10 @@
 const header = document.querySelector("header");
 const { height: headerHeightStr } = getComputedStyle(header);
+const decimalIdx = headerHeightStr.indexOf(".");
 const headerHeight = parseInt(
-  headerHeightStr.slice(0, headerHeightStr.length - 2),
+  decimalIdx > -1 
+   ? headerHeightStr.slice(0, decimalIdx)
+   : headerHeightStr,
   10
 );
 
@@ -11,7 +14,6 @@ const navLinks = Array.from(
 );
 
 const hero = document.getElementById("hero");
-
 
 navListUl.addEventListener("click", ({ target }) => {
   const isLink = target.classList.contains("link");

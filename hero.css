@@ -1,0 +1,51 @@
+
+#hero {
+    height: 100%;
+    width: 100vw;
+    background: url('./Big\ Sur.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  /* REALLY NEED TO BETTER UNDERSTAND STICKY */
+  /* THIS NEEDS SOME MEDIA QUERIES TO BE RESPONSIVE */
+  #hero #sticky {
+    width: 60vw;
+    height: 10vh;
+    position: sticky;
+    top: 40vh;
+    left: 20vw;
+  }
+  
+  #hero #sticky p {
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    0% {
+      left: -100vw;
+    }
+  
+    90% {
+      left: 20vw;
+    }
+  
+    100% {
+      left: 0;
+    }
+  }
+  
+  
