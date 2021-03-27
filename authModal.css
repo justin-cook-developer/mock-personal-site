@@ -9,7 +9,7 @@
 
     background-color: beige;
     border-radius: 6px;
-    box-shadow: 6px 4px 4px lightslategray;
+    box-shadow: 2px 2px 2px lightslategray;
 
     z-index: 10;
     position: fixed;
